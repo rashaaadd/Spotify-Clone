@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="icon" type="image/x-icon" href="./spotify_icon1.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/1ccdd11fd9d1d81756c40d7acb17d0aa?family=Circular+Spotify+Tx+T+Light" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="outer_box">
+        <div class="navbar">
+            <div class="brand">
+                <div class="logo">
+                    <a href="https://open.spotify.com/"><img id="spotify_logo" src="./Spotify_logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="nav_contents">
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-house fa-2x home_icon"></i>
+                        </td>
+                        <td>
+                            <a href="">Home</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><i class="fa fa-magnifying-glass fa-2x home_icon"></i></a>
+                        </td>
+                        <td>
+                            <a href="">Search</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><img id="library_icon"  src="./library.png" alt="Library"></a>
+                        </td>
+                        <td>
+                            <a href="">Your Library</a>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-square-plus fa-2x home_icon"></i>
+                        </td>
+                        <td>
+                            <a href="">Create Playlist</a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="add_playlist" src="./add_playlist.png" alt="Liked Songs">
+                        </td>
+                        <td>
+                            <a href="">Liked Songs</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tiny_links">
+                <div class="links_container">
+                    <div class="links_seperator">
+                        <div class="cookies_link">
+                            <a href=""><p>Cookies</p></a>
+                        </div>
+                        <div class="privacy_link">
+                            <a href=""><p>Privacy</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_part">
+            <div class="topbar">
+                    <div class="arrow_buttons">
+                        <div class="left_button">
+                            <button>
+                                <span class="fa-stack fa-lg" style="font-size:20px">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa-solid fa-chevron-left fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="right_button">
+                            <button>
+                                <span class="fa-stack fa-lg" style="font-size:20px">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa-solid fa-chevron-right fa-inverse fa-stack-1x"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="access_buttons">
+                    <div class="box">
+                        <div class="signup_container">
+                            <button class="button_class">Sign up</button>
+                        </div>
+                        <div class="login_container">
+                            <button id="login_button">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>India's Best</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Bollywood_butter.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Bollywood Butter</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Punjabi_songs.webp" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Punjabi 101</b></h4>
+                                      <p id="font">Remembering Sidhu<br><br> Moose Wala</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/kollywood_cream.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/indie_india.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Indie India</b></h4>
+                                      <p>'Chand Baliyan' and<br><br> other popular Indian hits</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/tollywood_pearls.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Tollywood Pearls</b></h4>
+                                      <p>The finest set of Telugu<br><br>music from the past 5...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>Charts</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50India.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - India</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50Global.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - Global</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/hothits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The hottest tracks in <br><br>India. Cover: Lizzo</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="charts/toptracks.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top Tracks of 2020</b></h4>
+                                      <p>The best tracks of <br><br>
+                                        2020.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/romancehits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>00's Romance Hits</b></h4>
+                                      <p>The nostalgic romantic <br>br songs of the 00's</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>India's Best</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Bollywood_butter.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Bollywood Butter</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Punjabi_songs.webp" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Punjabi 101</b></h4>
+                                      <p id="font">Remembering Sidhu<br><br> Moose Wala</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/kollywood_cream.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/indie_india.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Indie India</b></h4>
+                                      <p>'Chand Baliyan' and<br><br> other popular Indian hits</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/tollywood_pearls.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Tollywood Pearls</b></h4>
+                                      <p>The finest set of Telugu<br><br>music from the past 5...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>Charts</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50India.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - India</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50Global.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - Global</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/hothits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The hottest tracks in <br><br>India. Cover: Lizzo</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="charts/toptracks.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top Tracks of 2020</b></h4>
+                                      <p>The best tracks of <br><br>
+                                        2020.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/romancehits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>00's Romance Hits</b></h4>
+                                      <p>The nostalgic romantic <br>br songs of the 00's</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>India's Best</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Bollywood_butter.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Bollywood Butter</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/Punjabi_songs.webp" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Punjabi 101</b></h4>
+                                      <p id="font">Remembering Sidhu<br><br> Moose Wala</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/kollywood_cream.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The finest quality of <br><br> Bollywood music...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/indie_india.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Indie India</b></h4>
+                                      <p>'Chand Baliyan' and<br><br> other popular Indian hits</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./India's best/tollywood_pearls.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Tollywood Pearls</b></h4>
+                                      <p>The finest set of Telugu<br><br>music from the past 5...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="header">
+                            <div class="heading">
+                                <h1>Charts</h1>
+                            </div>
+                            <div class="seeAll_link">
+                                <a href="">SEE ALL</a>
+                            </div>
+                        </div>
+                        <div class="song_list">
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50India.jpg" alt="Avatar"style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - India</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/top50Global.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top 50 - Global</b></h4>
+                                      <p>Your daily update of the<br><br>most played tracks...</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/hothits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Kollywood Cream</b></h4>
+                                      <p>The hottest tracks in <br><br>India. Cover: Lizzo</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="charts/toptracks.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>Top Tracks of 2020</b></h4>
+                                      <p>The best tracks of <br><br>
+                                        2020.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="song_album">
+                                <div class="card">
+                                    <img src="./charts/romancehits.jpg" alt="Avatar" style="width:100%;border-radius: 10px;">
+                                    <div class="container1">
+                                      <h4><b>00's Romance Hits</b></h4>
+                                      <p>The nostalgic romantic <br>br songs of the 00's</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/8f6635b49e.js" crossorigin="anonymous"></script>
+</body>
+</html>
